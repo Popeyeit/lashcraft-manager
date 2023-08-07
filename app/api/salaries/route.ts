@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   const data: { artistId: number } = await req.json();
   const salaryData = {
-    amountArist: 0,
+    amountArtist: 0,
     amountSalon: 0,
     artistId: data.artistId,
   };
