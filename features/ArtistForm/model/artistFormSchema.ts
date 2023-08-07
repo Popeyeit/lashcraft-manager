@@ -5,7 +5,7 @@ export const schema = yup
     password: yup.string().required(),
     passwordConfirmation: yup
       .string()
-      .oneOf([yup.ref("password"), null], "Passwords must match"),
+      .oneOf([yup.ref("password"), ""], "Passwords must match"),
     role: yup.string().required(),
     birthDay: yup.date().required(),
     percent: yup.number().required(),
