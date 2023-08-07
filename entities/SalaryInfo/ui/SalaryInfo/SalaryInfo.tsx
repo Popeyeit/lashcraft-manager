@@ -5,7 +5,7 @@ type SalaryInfoProps = {
   children: React.ReactElement;
   login: string;
   amountSalon: number;
-  amountArist: number;
+  amountArtist: number;
   createdAt: string;
   updatedAt: string;
 };
@@ -13,7 +13,7 @@ type SalaryInfoProps = {
 export const SalaryInfo = ({
   children,
   login,
-  amountArist,
+  amountArtist,
   amountSalon,
   createdAt,
   updatedAt,
@@ -70,7 +70,7 @@ max-[500px]:before:absolute max-[500px]:before:left-0 max-[500px]:before:w-[50%]
 max-[500px]:before:pl-4 max-[500px]:before:text-base 
 max-[500px]:before:text-left max-[500px]:before:content-[attr(data-label)] max-[500px]:before:font-bold"
           >
-            {amountArist}
+            {amountArtist}
           </td>
           <td
             rowSpan={2}

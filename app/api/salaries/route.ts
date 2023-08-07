@@ -44,7 +44,7 @@ export async function PUT(req: Request) {
   const amountWithPercent = (data.transaction.amount / 100) * data.percent;
 
   const newAmountArtist = Math.round(
-    salary?.amountArist + (data.transaction.tip + amountWithPercent)
+    salary?.amountArtist + (data.transaction.tip + amountWithPercent)
   );
   const newAmountSalon = Math.round(
     (salary?.amountSalon as number) +
@@ -55,7 +55,7 @@ export async function PUT(req: Request) {
       id: data.salaryId,
     },
     data: {
-      amountArist: newAmountArtist,
+      amountArtist: newAmountArtist,
       amountSalon: newAmountSalon,
     },
   });

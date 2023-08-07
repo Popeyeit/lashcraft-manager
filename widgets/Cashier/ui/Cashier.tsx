@@ -23,7 +23,7 @@ export const Cashier = () => {
           return (
             <SalaryInfo
               key={item.id}
-              amountArist={item.amountArist}
+              amountArtist={item.amountArtist}
               amountSalon={item.amountSalon}
               createdAt={item.createdAt}
               updatedAt={item.updatedAt}
