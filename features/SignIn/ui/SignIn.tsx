@@ -39,6 +39,7 @@ export const SignIn = async () => {
         Password
       </label>
       <input
+        type="password"
         id="password"
         {...register("password")}
         className="w-full border-[1px] rounded-sm py-1 px-1"
