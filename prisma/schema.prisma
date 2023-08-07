@@ -48,21 +48,6 @@ model Salary {
   updatedAt     DateTime      @updatedAt
 }
 
-// Transaction 
-
-// Artist needs to take her money and she makes request to Alena
-// Alena gets request and approve operation.
-
-// Artist makes request to give  money of salon to Alena. 
-// Alena get request and approve operation.
-
-// Alena needs to take her money and she makes request to Artist
-// Artist gets request and approve operation.
-
-// Who makes request
-// It pass operation or get operatin.
-// Another person approve this operation.
-
 enum SlaryStatus {
   UNPAID
   PAID

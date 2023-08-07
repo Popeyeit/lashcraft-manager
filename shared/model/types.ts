@@ -9,7 +9,7 @@ export type UpdateSalaryTypes = {
 export type SalaryType = {
   amountArist: number;
   amountSalon: number;
-  approveArist: string;
+  approveArtist: string;
   approveSalon: string;
   artistId: number;
   createdAt: string;

@@ -35,7 +35,7 @@ export const TransactionForm = () => {
   const onSubmit = async (data: TransactionFormData) => {
     const idx = salaries.findIndex((item: SalaryType) => {
       return (
-        item?.approveSalon === "PENDING" && item?.approveArist === "PENDING"
+        item?.approveSalon === "PENDING" && item?.approveArtist === "PENDING"
       );
     });
 

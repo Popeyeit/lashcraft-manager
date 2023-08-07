@@ -33,7 +33,7 @@ export const Cashier = () => {
                 role={user.role}
                 salaryId={item.id}
                 artistId={artist.id}
-                approveArist={item.approveArist}
+                approveArtist={item.approveArtist}
                 approveSalon={item.approveSalon}
                 onChangeStatus={updateStoreSalaryStatus}
               />

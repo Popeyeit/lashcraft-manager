@@ -4,14 +4,14 @@ import { getSelectBg } from "../lib/functions";
 import { SalaryStatusType } from "../lib/types";
 
 export const SalaryBtns = ({
-  approveArist,
+  approveArtist,
   approveSalon,
   artistId,
   role,
   salaryId,
   onChangeStatus,
 }: {
-  approveArist: string;
+  approveArtist: string;
   approveSalon: string;
   artistId: number;
   role: string;
@@ -70,7 +70,7 @@ export const SalaryBtns = ({
       if (person === "salon") {
         return approveSalon === approve;
       } else {
-        return approveArist === approve;
+        return approveArtist === approve;
       }
     };
 
@@ -86,7 +86,7 @@ export const SalaryBtns = ({
         className={`${
           person === "salon"
             ? getSelectBg(approveSalon)
-            : getSelectBg(approveArist)
+            : getSelectBg(approveArtist)
         }
         block w-full px-4 py-4  cursor-pointer  font-bold 
         `}
@@ -115,7 +115,7 @@ export const SalaryBtns = ({
               ? approveSalon === "PAID"
                 ? true
                 : false
-              : approveArist === "PAID"
+              : approveArtist === "PAID"
               ? true
               : false
           }
@@ -125,7 +125,7 @@ export const SalaryBtns = ({
             ? approveSalon === "PAID"
               ? "Approved"
               : "Approve"
-            : approveArist === "PAID"
+            : approveArtist === "PAID"
             ? "Approved"
             : "Approve"}
         </option>
@@ -164,7 +164,7 @@ max-[500px]:before:absolute max-[500px]:before:left-0 max-[500px]:before:w-[50%]
 max-[500px]:before:pl-4 max-[500px]:before:text-base 
 max-[500px]:before:text-left max-[500px]:before:content-[attr(data-label)] max-[500px]:before:font-bold"
       >
-        {getBtn(approveArist, "artist")}
+        {getBtn(approveArtist, "artist")}
       </td>
     </tr>
   );

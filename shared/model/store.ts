@@ -192,7 +192,7 @@ export const useUser = create<userTypes>()((set) => ({
           return item.id === updatedSalary.id
             ? {
                 ...item,
-                approveArist: updatedSalary.approveArist,
+                approveArtist: updatedSalary.approveArtist,
                 approveSalon: updatedSalary.approveSalon,
               }
             : item;
