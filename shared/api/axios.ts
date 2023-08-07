@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "https://lashcrafthouse-manager.vercel.app/api",
   timeout: 3000,
   withCredentials: true,
 });
