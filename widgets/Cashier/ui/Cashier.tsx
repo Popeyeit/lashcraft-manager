@@ -16,7 +16,7 @@ export const Cashier = () => {
   useEffect(() => {}, [currentIdx]);
 
   return (
-    <div className="px-5 pt-20">
+    <div className="px-5 pt-10">
       <Tabs />
       <div>
         {salaries.map((item) => {

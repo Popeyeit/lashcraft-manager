@@ -25,7 +25,7 @@ export const CreateArtist = ({
         <button
           type="button"
           onClick={handleOpenModal}
-          className="hover:scale-110 ease-linear duration-300 fixed bottom-[120px] right-10 rounded-[50%] bg-primary w-[60px] h-[60px] text-[34px] leading-[60px] text-white"
+          className="hover:scale-110 ease-linear duration-300 fixed z-10 bottom-[120px] right-10 rounded-[50%] bg-primary w-[60px] h-[60px] text-[34px] leading-[60px] text-white"
         >
           +
         </button>

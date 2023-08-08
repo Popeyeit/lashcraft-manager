@@ -19,7 +19,9 @@ export default function RootLayout({
       <body className={`${inter.className} bg-[#FCFAF1]`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
-          <div className="flex flex-col flex-wrap flex-1 px-5">{children}</div>
+          <div className="flex flex-col flex-wrap flex-1 px-5 pb-[200px]">
+            {children}
+          </div>
           <NavBar />
         </div>
       </body>

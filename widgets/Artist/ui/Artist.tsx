@@ -5,7 +5,7 @@ import { ArtistForm } from "@/features/ArtistForm";
 
 export const Artist = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-10">
       <Tabs />
       <CreateArtist isAdminShowed>
         <ArtistForm />
